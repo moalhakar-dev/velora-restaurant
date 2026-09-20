@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="VELORA — a premium restaurant dining and reservation experience.">
+<title>VELORA — Fine Dining & Private Dining</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="restaurant.css">
+<link rel="stylesheet" href="CodeByGaurav.css">
+</head>
+<body>
+<div class="cursor-glow"></div>
+
+<header class="header">
+  <div class="nav">
+    <a href="#home" class="logo"><span>V</span>ELORA <small>FINE DINING</small></a>
+    <nav id="nav">
+      <a href="#menu">Menu</a><a href="#story">Our Story</a><a href="#experience">Experience</a><a href="#gallery">Gallery</a>
+    </nav>
+    <a class="gold-btn nav-book gold-hover" href="#reserve">Reserve a Table <b>↗</b></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open menu"><i></i><i></i><i></i></button>
+  </div>
+</header>
+
+<main>
+<section class="hero" id="home">
+  <div class="hero-photo"></div><div class="hero-overlay"></div>
+  <div class="hero-content">
+    <p class="eyebrow"><span></span> A MODERN CULINARY DESTINATION</p>
+    <h1>Where every<br>moment becomes <em>memorable.</em></h1>
+    <p class="hero-copy">An intimate dining experience shaped by fire, seasonality and the quiet art of hospitality.</p>
+    <div class="hero-actions">
+      <a class="gold-btn primary gold-hover" href="#reserve">Reserve a Table <b>↗</b></a>
+      <a class="line-btn gold-hover" href="#menu">Explore the Menu <b>↓</b></a>
+    </div>
+    <div class="hero-meta"><span>CAIRO · EGYPT</span><span>DINNER · 18:00 — 00:00</span><span>+20 100 000 0000</span></div>
+  </div>
+  <div class="hero-side"><span>SCROLL TO DISCOVER</span><b>↓</b></div>
+</section>
+
+<section class="intro section-line" id="story">
+ <div class="wrap intro-grid">
+  <div><p class="eyebrow"><span></span> THE VELORA PHILOSOPHY</p><h2>Elegance without<br><em>excess.</em></h2></div>
+  <div class="intro-copy"><p>VELORA is a contemporary restaurant built around thoughtful ingredients, precise technique and an atmosphere designed to slow time down.</p><p>From the first course to the last glass, every detail is considered — because exceptional dining is more than what is on the plate.</p><a class="text-link gold-hover" href="#experience">Discover our story <b>↗</b></a></div>
+ </div>
+</section>
+
+<section class="section menu-section section-line" id="menu">
+ <div class="wrap">
+  <div class="section-head"><div><p class="eyebrow"><span></span> FROM OUR KITCHEN</p><h2>A menu that follows<br><em>the season.</em></h2></div><p>Our menu changes with the finest ingredients available, balancing familiar flavors with unexpected details.</p></div>
+  <div class="dish-grid">
+   <article class="dish"><div class="dish-img img1"></div><div class="dish-info"><span>01 · SIGNATURE</span><h3>Charred Scallop</h3><p>Brown butter · citrus · garden herbs</p><strong>$34</strong></div></article>
+   <article class="dish"><div class="dish-img img2"></div><div class="dish-info"><span>02 · CHEF'S TABLE</span><h3>Ember Short Rib</h3><p>Smoked onion · truffle · jus</p><strong>$48</strong></div></article>
+   <article class="dish"><div class="dish-img img3"></div><div class="dish-info"><span>03 · DESSERT</span><h3>Dark Chocolate</h3><p>Sea salt · vanilla · cacao</p><strong>$22</strong></div></article>
+  </div>
+ </div>
+</section>
+
+<section class="experience section-line" id="experience">
+ <div class="experience-photo"></div>
+ <div class="experience-copy">
+  <p class="eyebrow"><span></span> PRIVATE DINING</p>
+  <h2>Made for<br><em>your occasion.</em></h2>
+  <p>Host an intimate dinner, celebration or private gathering in a space designed around your guests. Our team will tailor the menu, service and setting to the occasion.</p>
+  <a class="gold-btn gold-hover" href="#reserve">Plan your evening <b>↗</b></a>
+ </div>
+</section>
+
+<section class="gallery section-line" id="gallery">
+ <div class="wrap"><div class="section-head compact"><div><p class="eyebrow"><span></span> THE SPACE</p><h2>Designed to<br><em>linger.</em></h2></div><p>Warm light, natural textures and carefully considered details create an atmosphere that feels quietly luxurious.</p></div>
+ <div class="gallery-grid"><div class="g g1"></div><div class="g g2"></div><div class="g g3"></div><div class="g g4"></div></div>
+ </div>
+</section>
+
+<section class="reserve section-line" id="reserve">
+ <div class="wrap reserve-box">
+  <p class="eyebrow"><span></span> RESERVATIONS</p>
+  <h2>Your table is<br><em>waiting.</em></h2>
+  <p>For parties of 8 or more, private dining, or special occasions, contact our reservations team directly.</p>
+  <form id="reservationForm">
+   <div><input required type="text" placeholder="Your name"><input required type="email" placeholder="Email address"></div>
+   <div><input required type="date"><select required><option value="">Guests</option><option>2 guests</option><option>3 guests</option><option>4 guests</option><option>5 guests</option><option>6+ guests</option></select><select required><option value="">Time</option><option>18:00</option><option>19:30</option><option>21:00</option><option>22:30</option></select></div>
+   <textarea placeholder="Special requests (optional)"></textarea>
+   <button class="gold-btn primary gold-hover" type="submit">Request Reservation <b>↗</b></button>
+   <p class="form-note" id="formNote"></p>
+  </form>
+ </div>
+</section>
+</main>
+
+<footer><div class="wrap footer"><div class="logo"><span>V</span>ELORA <small>FINE DINING</small></div><p>© 2026 VELORA. Crafted for exceptional evenings.</p><a href="#home">Back to top ↑</a></div></footer>
+<script src="restaurant.js"></script>
+</body>
+</html>

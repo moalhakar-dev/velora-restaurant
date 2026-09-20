@@ -1,0 +1,11 @@
+:root{--cbg-gold:#d7aa55;--cbg-light:#f5d58f}
+.gold-hover{position:relative;overflow:hidden;isolation:isolate}
+.gold-hover:before{content:"";position:absolute;width:220px;height:220px;left:var(--mx,50%);top:var(--my,50%);transform:translate(-50%,-50%);border-radius:50%;background:radial-gradient(circle,rgba(255,232,165,.38),rgba(215,170,85,.14) 28%,transparent 67%);opacity:0;transition:opacity .28s ease;pointer-events:none;z-index:-1}
+.gold-hover:hover:before,.gold-hover:focus-visible:before{opacity:1}
+.gold-hover:hover{border-color:rgba(245,213,143,.95);box-shadow:0 0 28px rgba(215,170,85,.18),inset 0 0 18px rgba(255,225,150,.04);transform:translateY(-1px)}
+.gold-hover:active{transform:translateY(1px) scale(.985)}
+.gold-hover b{transition:transform .3s ease}
+.gold-hover:hover b{transform:translate(4px,-3px)}
+.dish{position:relative}
+.dish:after{content:"";position:absolute;inset:0;border:1px solid transparent;border-radius:17px;pointer-events:none;transition:.4s}
+.dish:hover:after{border-color:rgba(215,170,85,.35);box-shadow:inset 0 0 35px rgba(215,170,85,.04)}
